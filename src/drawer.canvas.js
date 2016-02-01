@@ -186,9 +186,6 @@ WaveSurfer.util.extend(WaveSurfer.Drawer.Canvas, {
 
             cc.closePath();
             cc.fill();
-
-            // Always draw a median line
-            cc.fillRect(0, halfH + offsetY - $, this.width, $);
         }, this);
     },
 

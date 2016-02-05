@@ -197,8 +197,8 @@ WaveSurfer.WebAudio = {
             for (var i = 0; i < length; i++) {
                 var start = ~~(i * sampleSize);
                 var end = ~~(start + sampleSize);
-                var min = chan[0];
-                var max = chan[0];
+                var min = Number.POSITIVE_INFINITY;
+                var max = Number.NEGATIVE_INFINITY;
 
                 for (var j = start; j < end; j += sampleStep) {
                     var value = chan[j];
